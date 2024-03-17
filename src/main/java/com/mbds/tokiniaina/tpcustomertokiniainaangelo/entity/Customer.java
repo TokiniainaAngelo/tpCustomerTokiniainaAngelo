@@ -18,7 +18,6 @@ import jakarta.validation.constraints.Size;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
-
 /**
  *
  * @author Best
@@ -177,6 +176,14 @@ public class Customer implements Serializable {
         this.discount = discountCode;
     }
 
+    public Discount getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(Discount discount) {
+        this.discount = discount;
+    }
+
     public MicroMarket getZip() {
         return zip;
     }
@@ -209,5 +216,5 @@ public class Customer implements Serializable {
     public String toString() {
         return "com.mbds.tokiniaina.tpcustomertokiniainaangelo.entity.Customer[ customerId=" + customerId + " ]";
     }
-    
+
 }
